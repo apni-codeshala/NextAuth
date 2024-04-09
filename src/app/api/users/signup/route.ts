@@ -11,7 +11,7 @@ export async function POST(request: NextRequest) {
 
         const reqBody = request.json();
         const {username, email, password} = await reqBody;
-        // console.log(reqBody);
+        console.log(reqBody);
 
         // validation
         const user = await User.findOne({email});
